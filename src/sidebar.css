@@ -1,0 +1,40 @@
+.sidebar-container{
+    min-height: 100vh;
+    background-color: lightgray;
+  }
+  .sidebar {
+    width: 200px;
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sidebar-link{
+    padding: 10px;
+  }
+
+  .sidebar-link:hover{
+    border-right: 5px solid dimgray;
+    background-color: gainsboro;
+  }
+
+  .mysidenav{
+    background-color: rgb(170, 150, 203);
+    font-family:Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+
+  }
+
+  .mysidenav:hover{
+    border-right: 5px solid rgb(71, 39, 82);
+    background-color: rgb(83, 63, 100);
+
+  }
+  h3{
+    color:#AD0AFD;
+  }
+  .content{
+    font-size: large;
+  }
+ 
+  @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
+ 
