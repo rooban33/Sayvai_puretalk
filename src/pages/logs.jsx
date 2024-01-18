@@ -47,9 +47,10 @@ function Logs() {
                 
             </div>
             <div className='table-wrapper'>
-            <table class="fl-table">
-  
+            <table class="fl-table fixed_header">
+            
                 <tr>
+                    
                     <th>To</th>
                     <th>From</th>
                     <th>Length</th>
@@ -58,6 +59,18 @@ function Logs() {
                     <th>Status</th>
                     <th>Call ID</th>
                     <th>Actions</th>
+                    
+                </tr>
+                
+                <tr>
+                    <td>To</td>
+                    <td>From</td>
+                    <td>Length</td>
+                    <td>Cost</td>
+                    <td>Created at</td>
+                    <td>Status</td>
+                    <td>Call ID</td>
+                    <td>Actions</td>
                 </tr>
                 <tr>
                     <td>To</td>
@@ -69,6 +82,167 @@ function Logs() {
                     <td>Call ID</td>
                     <td>Actions</td>
                 </tr>
+                <tr>
+                    <td>To</td>
+                    <td>From</td>
+                    <td>Length</td>
+                    <td>Cost</td>
+                    <td>Created at</td>
+                    <td>Status</td>
+                    <td>Call ID</td>
+                    <td>Actions</td>
+                </tr>
+                <tr>
+                    <td>To</td>
+                    <td>From</td>
+                    <td>Length</td>
+                    <td>Cost</td>
+                    <td>Created at</td>
+                    <td>Status</td>
+                    <td>Call ID</td>
+                    <td>Actions</td>
+                </tr>
+                <tr>
+                    <td>To</td>
+                    <td>From</td>
+                    <td>Length</td>
+                    <td>Cost</td>
+                    <td>Created at</td>
+                    <td>Status</td>
+                    <td>Call ID</td>
+                    <td>Actions</td>
+                </tr>
+                <tr>
+                    <td>To</td>
+                    <td>From</td>
+                    <td>Length</td>
+                    <td>Cost</td>
+                    <td>Created at</td>
+                    <td>Status</td>
+                    <td>Call ID</td>
+                    <td>Actions</td>
+                </tr>
+                <tr>
+                    <td>To</td>
+                    <td>From</td>
+                    <td>Length</td>
+                    <td>Cost</td>
+                    <td>Created at</td>
+                    <td>Status</td>
+                    <td>Call ID</td>
+                    <td>Actions</td>
+                </tr>
+                <tr>
+                    <td>To</td>
+                    <td>From</td>
+                    <td>Length</td>
+                    <td>Cost</td>
+                    <td>Created at</td>
+                    <td>Status</td>
+                    <td>Call ID</td>
+                    <td>Actions</td>
+                </tr>
+                <tr>
+                    <td>To</td>
+                    <td>From</td>
+                    <td>Length</td>
+                    <td>Cost</td>
+                    <td>Created at</td>
+                    <td>Status</td>
+                    <td>Call ID</td>
+                    <td>Actions</td>
+                </tr><tr>
+                    <td>To</td>
+                    <td>From</td>
+                    <td>Length</td>
+                    <td>Cost</td>
+                    <td>Created at</td>
+                    <td>Status</td>
+                    <td>Call ID</td>
+                    <td>Actions</td>
+                </tr><tr>
+                    <td>To</td>
+                    <td>From</td>
+                    <td>Length</td>
+                    <td>Cost</td>
+                    <td>Created at</td>
+                    <td>Status</td>
+                    <td>Call ID</td>
+                    <td>Actions</td>
+                </tr><tr>
+                    <td>To</td>
+                    <td>From</td>
+                    <td>Length</td>
+                    <td>Cost</td>
+                    <td>Created at</td>
+                    <td>Status</td>
+                    <td>Call ID</td>
+                    <td>Actions</td>
+                </tr><tr>
+                    <td>To</td>
+                    <td>From</td>
+                    <td>Length</td>
+                    <td>Cost</td>
+                    <td>Created at</td>
+                    <td>Status</td>
+                    <td>Call ID</td>
+                    <td>Actions</td>
+                </tr><tr>
+                    <td>To</td>
+                    <td>From</td>
+                    <td>Length</td>
+                    <td>Cost</td>
+                    <td>Created at</td>
+                    <td>Status</td>
+                    <td>Call ID</td>
+                    <td>Actions</td>
+                </tr><tr>
+                    <td>To</td>
+                    <td>From</td>
+                    <td>Length</td>
+                    <td>Cost</td>
+                    <td>Created at</td>
+                    <td>Status</td>
+                    <td>Call ID</td>
+                    <td>Actions</td>
+                </tr><tr>
+                    <td>To</td>
+                    <td>From</td>
+                    <td>Length</td>
+                    <td>Cost</td>
+                    <td>Created at</td>
+                    <td>Status</td>
+                    <td>Call ID</td>
+                    <td>Actions</td>
+                </tr><tr>
+                    <td>To</td>
+                    <td>From</td>
+                    <td>Length</td>
+                    <td>Cost</td>
+                    <td>Created at</td>
+                    <td>Status</td>
+                    <td>Call ID</td>
+                    <td>Actions</td>
+                </tr><tr>
+                    <td>To</td>
+                    <td>From</td>
+                    <td>Length</td>
+                    <td>Cost</td>
+                    <td>Created at</td>
+                    <td>Status</td>
+                    <td>Call ID</td>
+                    <td>Actions</td>
+                </tr><tr>
+                    <td>To</td>
+                    <td>From</td>
+                    <td>Length</td>
+                    <td>Cost</td>
+                    <td>Created at</td>
+                    <td>Status</td>
+                    <td>Call ID</td>
+                    <td>Actions</td>
+                </tr>
+                
                 
             </table>
             <center>

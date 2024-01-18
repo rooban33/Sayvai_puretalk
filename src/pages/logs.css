@@ -3,7 +3,7 @@
 body {
     font-family: "Inter", sans-serif;
     line-height: 1.5;
-    min-height: 95vh;
+    min-height: 115vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -63,10 +63,12 @@ h4:hover {
     background-color: white;
 }
 
+
 .table-wrapper {
     margin: 20px 70px 70px; /* Increase the margin as needed */
     box-shadow: 0px 35px 50px rgba(0, 0, 0, 0.2);
     overflow-x: auto; /* Enable horizontal scroll for smaller screens */
+    height: 300px;
 }
 
 .fl-table {
@@ -86,6 +88,8 @@ h4:hover {
 .fl-table th {
     text-align: center;
     padding: 12px; /* Increase the padding as needed */
+    
+    
 }
 
 .fl-table td {
@@ -96,6 +100,7 @@ h4:hover {
     color: #ffffff;
     background: #4FC3A1;
     white-space: nowrap;
+    font-size: 10vh;
 }
 
 .fl-table tr:hover{
@@ -129,6 +134,7 @@ h4:hover {
         width: auto;
         position: relative;
         overflow-x: auto;
+        height: auto;
     }
     .fl-table td, .fl-table th {
         padding: 20px .625em .625em .625em;
@@ -166,3 +172,6 @@ h4:hover {
         text-align: center;
     }
 }
+  /* Add media query for responsiveness */
+
+  
