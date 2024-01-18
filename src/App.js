@@ -3,6 +3,10 @@ import './App.css';
 
 
 function App() {
+  function name()
+  {
+    return <div><h3>SA</h3></div>
+  }
 
   function values()
   {
@@ -10,7 +14,7 @@ function App() {
   }
   return (
     <header>
-  <img src="https://media.licdn.com/dms/image/D5603AQHOcsuK1QSt-Q/profile-displayphoto-shrink_800_800/0/1703137619711?e=2147483647&v=beta&t=GW5tHDCzf3Plif4hbEIYe_H5BSZpFCHvg_X-X8bu7wE"/>
+  <img src="https://miro.medium.com/v2/resize:fit:1400/1*8OF3gEwVkPjcPfnD2fY63A.png"/>
   <div class="topnav-right">
   <nav>
     <ul>
@@ -20,6 +24,8 @@ function App() {
       <li></li>
       <li>Credits: {values()}</li>
       <li><b><a>Purchase Credits</a></b></li>
+      <li></li>
+      <li><button className='round1'>{name()}</button></li>
     </ul>
   </nav>
 </div>

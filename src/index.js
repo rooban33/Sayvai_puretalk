@@ -5,13 +5,25 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Sidebar from './sidebar';
 import Logs from './pages/logs';
+import Welcome from './pages/welcome';
+
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Sidebar />
     <App/>
-    <Logs/>
+    <Router>
+    <Sidebar />
+      <Routes>
+        <Route path='/' element={<Welcome/>} />
+        <Route path='/logs' element={<Logs/>} />
+    
+      </Routes>
+    </Router>
+    
+    
+    
   
   </React.StrictMode>
 );

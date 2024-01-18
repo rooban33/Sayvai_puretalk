@@ -1,15 +1,35 @@
-
 header img {
   height: 70px;
   margin-left: 190px;
 }
+
 body {
-  
-  background-color:beige;
+  background-color: azure;
   background-size: cover;
   font-family: sans-serif;
-  
 }
+
+
+
+.round1 {
+  background-color: #79159d;
+  border: none;
+  color: white;
+  padding: 22px; /* Adjust the padding as needed */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px; /* Adjust the font size as needed */
+  margin: 4px 2px;
+  border-radius: 50%;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.round1:hover {
+  background-color: white;
+  color: #79159d;
+}
+
 
 main {
   color: white;
@@ -50,6 +70,7 @@ ul {
   padding: 0;
   display: inline-block;
 }
+
 .topnav-right a:hover {
   background-color: #dddddd;
   color: black;
