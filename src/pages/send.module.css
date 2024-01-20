@@ -1,0 +1,109 @@
+
+  @import url("https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css");
+  @import 'tailwindcss/base';
+  @import 'tailwindcss/components';
+  @import 'tailwindcss/utilities';
+  @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+ 
+    label {
+      display: block;
+      margin-bottom: 40px;
+    }
+    
+    input,
+    textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 16px;
+    }
+    
+    button {
+      background-color: #3498db;
+      color: #fff;
+      padding: 10px 20px;
+      cursor: pointer;
+      border: none;
+      border-radius: 4px;
+    }
+    
+    button:hover {
+      background-color: #2980b9;
+    }
+    
+    /* Add more styles as needed */
+    
+  .font-bold {
+    font-weight: bold;
+  }
+  
+  .text-lg {
+    font-size: 1.125rem; /* Adjust as needed */
+  }
+  
+  .mb-2 {
+    margin-bottom: .5rem; /* Adjust as needed */
+  }
+  .align-left {
+    text-align: left;
+  }
+  
+  .text-sm {
+    font-size: .975rem; /* Adjust as needed */
+  }
+  
+  .mb-4 {
+    margin-bottom: 1rem; /* Adjust as needed */
+  }
+  
+  .overflow-hidden {
+    overflow: hidden;
+  }
+  
+  .whitespace-nowrap {
+    white-space: nowrap;
+  }
+  
+  .inline-block {
+    display: inline-block;
+  }
+  
+  .no-button {
+    background-color: #fff;
+    color: #333;
+  }
+  .inline-block {
+    display: inline-block;
+  }
+  /* Add your styles here */
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 40px;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+  }
+  
+  button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Add more styles as needed */
+  

@@ -1,5 +1,5 @@
 import './default.css';
-import { Discalender } from './calender.jsx';
+import { Discalender } from './calender.js';
 
 import React, { useState } from 'react';
 

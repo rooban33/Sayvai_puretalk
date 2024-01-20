@@ -6,6 +6,8 @@ import reportWebVitals from './reportWebVitals';
 import Sidebar from './sidebar';
 import Logs from './pages/logs';
 import Welcome from './pages/welcome';
+{/*import SendCallForm from './pages/sendcall';*/}
+
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -18,6 +20,7 @@ root.render(
       <Routes>
         <Route path='/' element={<Welcome/>} />
         <Route path='/logs' element={<Logs/>} />
+       {/* <Route path='/gcall' element={<SendCallForm/>} />*/}
     
       </Routes>
     </Router>

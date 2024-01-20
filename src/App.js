@@ -14,7 +14,7 @@ function App() {
   }
   return (
     <header>
-  <img src="https://miro.medium.com/v2/resize:fit:1400/1*8OF3gEwVkPjcPfnD2fY63A.png"/>
+  <img className="hi" src="https://miro.medium.com/v2/resize:fit:1400/1*8OF3gEwVkPjcPfnD2fY63A.png"/>
   <div class="topnav-right">
   <nav>
     <ul>
