@@ -1,32 +1,25 @@
 import React from 'react';
 import { useState } from 'react';
-import './send.module.css';
+import './send.css';
 import axios from 'axios';
+
 const SendCallForm = () => {
- 
   const [voiceSpeed, setVoiceSpeed] = useState(1);
-
-  // State for the interruption threshold slider
   const [interruptionThreshold, setInterruptionThreshold] = useState(50);
-
-  // State for the selected task
   const [selectedTask, setSelectedTask] = useState('');
 
-  // Handler for the voice speed slider
   const handleVoiceSpeedChange = (event) => {
     setVoiceSpeed(event.target.value);
   };
 
-  // Handler for the interruption threshold slider
   const handleInterruptionThresholdChange = (event) => {
     setInterruptionThreshold(event.target.value);
   };
 
-  // Handler for selecting a task
   const handleTaskSelect = (task) => {
     setSelectedTask(task);
-  }
-  // State to store form data
+  };
+
   const [formData, setFormData] = useState({
     phoneNumber: '555-555-5555',
     language: 'English',
@@ -38,14 +31,46 @@ const SendCallForm = () => {
     parameters: [{ key: '', value: '' }],
   });
 
-  // Event handler for form submission
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Add logic to handle the form data, e.g., making an API request
-    console.log('Form submitted:', formData);
+
+    const headers = {
+      authorization: "sk-m265t82luch5ycvuyui918xwnxlj0y93hsyvbliqlv4dl3jju2a2v2rc0wynh53u69",
+      'Content-Type': 'application/json',
+    };
+
+    const data = {
+      phone_number: formData.phoneNumber,
+      task: formData.selectedTask,
+      voice_id: 0,
+      reduce_latency: formData.reduceLatency,
+      amd: true,
+      webhook: "YOUR-WEBHOOK-HERE", // Replace with your actual webhook URL
+      request_data: {
+        // Add your request_data parameters here
+        calling: "Fantastic Airlines",
+        bag_claim: "69683",
+        airline_code: "UA123",
+      },
+      dynamic_data: formData.parameters.map(param => ({
+        [param.key]: param.value,
+      })),
+      interruption_threshold: interruptionThreshold,
+      voice_speed: voiceSpeed,
+      // Add other data fields as needed
+    };
+
+    try {
+      const response = await axios.post("https://api.bland.ai/v1/calls", data, { headers });
+      console.log('API Response:', response.data);
+    } catch (error) {
+      console.error('API Request Error:', error);
+    }
+
+    // Print form data
+    console.log('Form Data:', formData);
   };
 
-  // Event handler for updating form data
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
     setFormData((prevData) => ({
@@ -54,7 +79,6 @@ const SendCallForm = () => {
     }));
   };
 
-  // Event handler for adding parameters
   const addParameter = () => {
     setFormData((prevData) => ({
       ...prevData,
@@ -62,7 +86,6 @@ const SendCallForm = () => {
     }));
   };
 
-  // Event handler for removing parameters
   const removeParameter = (index) => {
     setFormData((prevData) => {
       const updatedParameters = [...prevData.parameters];
@@ -74,8 +97,7 @@ const SendCallForm = () => {
     });
   };
 
-  // Event handler for updating parameter data
-  function handleParameterChange(index, field, value) {
+  const handleParameterChange = (index, field, value) => {
     setFormData((prevData) => {
       const updatedParameters = [...prevData.parameters];
       updatedParameters[index][field] = value;
@@ -84,39 +106,13 @@ const SendCallForm = () => {
         parameters: updatedParameters,
       };
     });
+  };
 
-  }
-  
-  const handleSumit = async (e) => {
-    e.preventDefault();
-  
-    // Assuming your headers and data are already defined
-    const headers = {
-      authorization: "sk-m265t82luch5ycvuyui918xwnxlj0y93hsyvbliqlv4dl3jju2a2v2rc0wynh53u69",
-    };
-  
-    const data = {
-      phone_number: formData.phoneNumber,
-      task: selectedTask, // Assuming you want to use the selected task
-      voice_id: 0, // You may need to adjust this based on your requirements
-      // Add other data fields as needed
-    };
-  
-    try {
-      // Make the API request
-      const response = await axios.post("https://api.bland.ai/v1/calls", data, { headers });
-  
-      // Handle the response as needed
-      console.log('API Response:', response.data);
-    } catch (error) {
-      // Handle errors
-      console.error('API Request Error:', error);
-    }
-}
   return (
+    <div className="sendcalll-styles">
     <div style={{ maxWidth: '600px', margin: 'auto',display: 'block', padding: '20px' }}>
       <h1 style={{ fontSize: '24px', fontWeight: 'bold', marginBottom: '20px' }}>Send a Phone Call</h1>
-      <form onSubmit={handleSumit}>
+      <form onSubmit={handleSubmit}>
         {/* Example: Phone Number */}
         <div style={{ marginBottom: '20px' }}>
           <label htmlFor="phoneNumber" style={{ display: 'flex', marginBottom: '5px' }}>Phone Number</label>
@@ -231,6 +227,7 @@ const SendCallForm = () => {
             >
               Telehealth
             </button>
+            &nbsp;
             <button
               className={`bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center ${
                 selectedTask === 'Telehealth' ? 'selected' : ''
@@ -239,6 +236,7 @@ const SendCallForm = () => {
             >
               Small Business
             </button>
+            &nbsp;
             <button
               className={`bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center ${
                 selectedTask === 'Telehealth' ? 'selected' : ''
@@ -247,6 +245,7 @@ const SendCallForm = () => {
             >
               Stadium Venues
             </button>
+            &nbsp;
             <button
               className={`bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center ${
                 selectedTask === 'Telehealth' ? 'selected' : ''
@@ -305,7 +304,7 @@ const SendCallForm = () => {
     </div>
 
 
-
+    </div>
   );
          
         }

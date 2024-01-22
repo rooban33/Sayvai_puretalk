@@ -21,6 +21,7 @@
   .mysidenav{
     background-color: rgb(170, 150, 203);
     font-family:Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    height: 200vh;
 
   }
 
@@ -38,3 +39,4 @@
  
   @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
  
+  

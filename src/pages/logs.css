@@ -174,4 +174,17 @@ h4:hover {
 }
   /* Add media query for responsiveness */
 
-  
+  @media (max-width: 767px) {
+    .table-wrapper {
+        margin: 20px 5px 70px; /* Adjust the margin as needed for smaller screens */
+    }
+
+    .fl-table thead th {
+        font-size: 5vh; /* Adjust font size for smaller screens */
+    }
+
+    .fl-table td,
+    .fl-table th {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+}
